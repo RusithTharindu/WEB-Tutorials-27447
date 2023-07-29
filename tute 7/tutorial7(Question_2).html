@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pop-up Message Box</title>
+</head>
+<body>
+    <button id="popupButton" onclick="displayPopup()">Click Me!</button>
+    <br>
+    <script>
+        var mark1 = prompt("Enter 1 mark");
+        var mark2 = prompt("Enter 2 mark");
+        var mark3 = prompt("Enter 3 mark");
+        var mark4 = prompt("Enter 4 mark");
+        var mark5 = prompt("Enter 5 mark");
+    
+        
+        var numMark1 = parseInt(mark1);
+        var numMark2 = parseInt(mark2);
+        var numMark3 = parseInt(mark3);
+        var numMark4 = parseInt(mark4);
+        var numMark5 = parseInt(mark5);
+
+       
+        var sum = numMark1 + numMark2 + numMark3 + numMark4 +numMark5 ;
+        let avg = sum / 5;
+
+        
+        document.write("Sum is " + sum );
+            document.write("Average is " + avg);
+        function displayPopup() {
+            if (avg > 30) {
+                alert("Congrats! you passed");
+            }
+            else {
+                alert("Beter luck next time");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+</body>
+</html>

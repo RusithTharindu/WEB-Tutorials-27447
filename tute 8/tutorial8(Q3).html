@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pop-up Message Box</title>
+</head>
+<body>
+    <button id="btnRED" onmouseover="over('red')" onmouseout="out()">RED</button>
+    <button id="btnGREEN" onmouseover="over('green')" onmouseout="out()">GREEN</button>
+    <button id="btnBLUE" onmouseover="over('blue')" onmouseout="out()">BLUE</button>
+    <br>
+    <script>
+        function over(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function out() {
+            document.body.style.backgroundColor = "white"; 
+        }
+    </script>
+</body>
+</html>
